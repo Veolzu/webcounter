@@ -22,12 +22,8 @@ def reset():
 
 @app.route("/set", methods=["POST"])
 def set():
-    try:
-        num = int(request.form["value"])
-        cnt.reset()
-
-    except ValueError:
-        num = 0
+    num = int(request.form["value"])
+    cnt.reset()
     cnt.increment(num)
 
     return redirect("/")

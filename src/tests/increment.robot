@@ -11,6 +11,7 @@ At start the counter is zero
 
 When button pressed twice the counter is two
     Go To  ${HOME_URL}
+    Click  button >> text=Nollaa
     Click  button >> text=Paina
     Click  button >> text=Paina
     Get Text  body  *=  nappia painettu 2 kertaa
